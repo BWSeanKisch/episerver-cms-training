@@ -1,0 +1,12 @@
+﻿@using AlloyTraining.Models.Pages
+@using EPiServer.Web.Mvc.Html
+
+@model AlloyTraining.Models.ViewModels.IPageViewModel<StandardPage>
+@{
+    Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml";
+}
+<div class="row">
+    <div class="span8 clearfix">
+        @Html.PropertyFor(x => x.CurrentPage.MainBody)
+    </div>
+</div>
